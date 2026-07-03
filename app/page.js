@@ -3,7 +3,7 @@ import { highlights, menu, restaurant, reviews } from "./content";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const featuredDishes = menu.find((g) => g.category === "Grillades & Plats").items.slice(0, 3);
+  const featuredDishes = menu.find((g) => g.category === "Grillades").items.slice(0, 3);
 
   return (
     <>
