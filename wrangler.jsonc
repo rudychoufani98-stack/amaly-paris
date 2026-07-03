@@ -1,0 +1,8 @@
+{
+  "name": "amaly-paris",
+  "compatibility_date": "2026-07-03",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
