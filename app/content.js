@@ -14,6 +14,7 @@ export const restaurant = {
   instagram: "https://www.instagram.com/amalyrestaurant/", // confirmé
   thefork: "https://www.thefork.fr/restaurant/amaly-r863243", // confirmé
   rating: "9,6/10", // confirmé (TheFork, 38 avis sur 30 jours)
+  gaId: "G-XXXXXXXXXX", // [A CONFIRMER] — remplacez par votre ID Google Analytics (Admin > Flux de données > ID de mesure)
   hours: [
     { day: "Lundi", value: "Fermé" },
     { day: "Mardi - Vendredi", value: "12h00 - 14h30 / 19h00 - 22h30" },
