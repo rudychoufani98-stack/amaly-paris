@@ -66,6 +66,22 @@ export default function ContactPage() {
 
           <div>
             <h2 className={styles.groupTitle}>Réserver une table</h2>
+            <div className={styles.theforkBox}>
+              <p>
+                Réservez instantanément en ligne via TheFork
+                {restaurant.rating ? ` (note ${restaurant.rating})` : ""}.
+              </p>
+              <a
+                href={restaurant.thefork}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                Réserver sur TheFork
+              </a>
+            </div>
+
+            <h3 className={styles.formTitle}>Une autre demande ? Écrivez-nous</h3>
             <ReservationForm />
           </div>
         </div>

@@ -23,14 +23,22 @@ export default function AvisPage() {
       <section className="section">
         <div className="container">
           <div className={styles.grid}>
-            {reviews.map((review) => (
-              <div key={review.name} className={styles.card}>
+            {reviews.map((review, i) => (
+              <div key={i} className={styles.card}>
                 <div className={styles.stars}>{"★".repeat(review.rating)}</div>
                 <p>"{review.text}"</p>
                 <span className={styles.name}>{review.name}</span>
               </div>
             ))}
           </div>
+          {restaurant.thefork && (
+            <p className={styles.more}>
+              Note {restaurant.rating} sur TheFork —{" "}
+              <a href={restaurant.thefork} target="_blank" rel="noreferrer">
+                voir tous les avis
+              </a>
+            </p>
+          )}
         </div>
       </section>
     </>

@@ -29,8 +29,13 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a href={`tel:${restaurant.phoneHref}`} className="btn btn-primary">
-            {restaurant.phone}
+          <a
+            href={restaurant.thefork}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            Réserver
           </a>
         </nav>
 

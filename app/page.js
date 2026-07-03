@@ -3,13 +3,13 @@ import { highlights, menu, restaurant, reviews } from "./content";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const featuredDishes = menu[2].items.slice(0, 3);
+  const featuredDishes = menu.find((g) => g.category === "Grillades & Plats").items.slice(0, 3);
 
   return (
     <>
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
-          <span className="eyebrow">Restaurant libanais — Paris</span>
+          <span className="eyebrow">Restaurant libanais — Paris 16e</span>
           <h1 className={styles.heroTitle}>
             Les saveurs du Liban,
             <br />
@@ -19,10 +19,11 @@ export default function Home() {
             Mezze généreux, grillades parfumées et pâtisseries maison, dans une salle
             chaleureuse au coeur de Paris. Amaly vous accueille comme en famille.
           </p>
+          <p className={styles.heroRating}>★ {restaurant.rating} sur TheFork</p>
           <div className={styles.heroActions}>
-            <Link href="/contact" className="btn btn-primary">
+            <a href={restaurant.thefork} target="_blank" rel="noreferrer" className="btn btn-primary">
               Réserver une table
-            </Link>
+            </a>
             <Link href="/menu" className="btn btn-ghost">
               Voir la carte
             </Link>
@@ -80,8 +81,8 @@ export default function Home() {
             <h2>Ce qu'en pensent nos clients</h2>
           </div>
           <div className={styles.reviewGrid}>
-            {reviews.map((review) => (
-              <div key={review.name} className={styles.reviewCard}>
+            {reviews.map((review, i) => (
+              <div key={i} className={styles.reviewCard}>
                 <div className={styles.stars}>{"★".repeat(review.rating)}</div>
                 <p>"{review.text}"</p>
                 <span className={styles.reviewName}>{review.name}</span>
@@ -96,12 +97,12 @@ export default function Home() {
           <h2>Envie d'un moment libanais ?</h2>
           <p>{restaurant.address}</p>
           <div className={styles.heroActions}>
-            <Link href="/contact" className="btn btn-primary">
+            <a href={restaurant.thefork} target="_blank" rel="noreferrer" className="btn btn-primary">
               Réserver
-            </Link>
-            <a href={`tel:${restaurant.phoneHref}`} className="btn btn-ghost">
-              Appeler le {restaurant.phone}
             </a>
+            <Link href="/contact" className="btn btn-ghost">
+              Nous contacter
+            </Link>
           </div>
         </div>
       </section>

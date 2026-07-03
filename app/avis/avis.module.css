@@ -40,6 +40,19 @@
   color: rgba(26, 21, 18, 0.6);
 }
 
+.more {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: rgba(26, 21, 18, 0.7);
+}
+
+.more a {
+  color: var(--gold-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 @media (max-width: 860px) {
   .grid {
     grid-template-columns: 1fr;

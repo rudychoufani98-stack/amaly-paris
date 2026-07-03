@@ -6,35 +6,45 @@
 
 export const restaurant = {
   name: "Amaly",
-  tagline: "Cuisine libanaise, coeur de Paris",
-  phone: "01 23 45 67 89", // [A CONFIRMER]
+  tagline: "Cuisine libanaise, coeur du 16e",
+  phone: "01 23 45 67 89", // [A CONFIRMER] — non public sur TheFork/Instagram, à récupérer auprès du resto
   phoneHref: "+33123456789", // [A CONFIRMER]
   email: "contact@amaly.paris", // [A CONFIRMER]
-  address: "12 Rue de la Paix, 75002 Paris", // [A CONFIRMER]
-  instagram: "https://instagram.com/amaly.paris", // [A CONFIRMER]
+  address: "20 bis Rue Jean Giraudoux, 75116 Paris", // confirmé via TheFork
+  instagram: "https://www.instagram.com/amalyrestaurant/", // confirmé
+  thefork: "https://www.thefork.fr/restaurant/amaly-r863243", // confirmé
+  rating: "9,6/10", // confirmé (TheFork, 38 avis sur 30 jours)
   hours: [
     { day: "Lundi", value: "Fermé" },
     { day: "Mardi - Vendredi", value: "12h00 - 14h30 / 19h00 - 22h30" },
     { day: "Samedi - Dimanche", value: "12h00 - 15h00 / 19h00 - 23h00" },
-  ], // [A CONFIRMER]
+  ], // [A CONFIRMER] — horaires non publiés sur TheFork, à confirmer
 };
 
 export const highlights = [
   {
-    title: "Fait maison",
-    text: "Mezze, pains et pâtisseries préparés chaque jour selon les recettes libanaises traditionnelles.",
+    title: "Formules mezze généreuses",
+    text: "Assortiments de 10 à 18 mezzés à partager, pensés pour un vrai repas libanais convivial.",
   },
   {
-    title: "Produits frais",
-    text: "Herbes, légumes et viandes sélectionnés avec soin auprès de producteurs locaux.",
+    title: "Terrasse & ambiance chaleureuse",
+    text: "Une salle moderne et épurée, avec terrasse, pour un déjeuner comme pour un dîner romantique.",
   },
   {
-    title: "Accueil chaleureux",
-    text: "L'hospitalité libanaise au coeur de Paris, pour un déjeuner comme pour un dîner entre amis.",
+    title: "Végétarien & vegan bienvenus",
+    text: "Une large sélection de mezze végétariens et vegan, aussi savoureux que les plats de viande.",
   },
-];
+]; // Basé sur les caractéristiques confirmées du restaurant (TheFork)
 
 export const menu = [
+  {
+    category: "Formules Mezze", // confirmé via TheFork
+    items: [
+      { name: "Assortiment 10 mezzés", desc: "Pour 2 personnes", price: "60,00 €" },
+      { name: "Assortiment 14 mezzés", desc: "Pour 3 personnes", price: "90,00 €" },
+      { name: "Assortiment 18 mezzés", desc: "Pour 4 personnes", price: "120,00 €" },
+    ],
+  },
   {
     category: "Mezze froids",
     items: [
@@ -80,25 +90,27 @@ export const menu = [
       { name: "Vin libanais (verre)", desc: "Sélection de la Bekaa", price: "7,00 €" },
     ],
   },
-]; // [A CONFIRMER] — remplacer par la vraie carte et les vrais prix
+]; // Formules Mezze confirmées. Le reste des plats/prix sont des exemples [A CONFIRMER]
+// — le menu détaillé n'est publié que sous forme d'image sur TheFork,
+// envoyez la vraie carte (photo ou texte) pour la remplacer.
 
 export const reviews = [
   {
-    name: "Camille D.",
-    text: "Un vrai coin du Liban à Paris. Le chich taouk est incroyable et l'accueil est très chaleureux.",
+    name: "Avis TheFork",
+    text: "La nourriture était fantastique ! Nous avons partagé l'assortiment de mezze pour 3, et tout était excellent.",
     rating: 5,
   },
   {
-    name: "Marc L.",
-    text: "Mezze généreux et parfumés, cadre agréable. On y retourne dès qu'on peut.",
+    name: "Avis TheFork",
+    text: "Un accueil merveilleux et une cuisine délicieuse.",
     rating: 5,
   },
   {
-    name: "Sarah B.",
-    text: "Le baklava maison est une tuerie. Service souriant, on se sent bien reçu.",
+    name: "Avis TheFork",
+    text: "Un excellent service et une excellente cuisine, des saveurs et des textures fines et variées.",
     rating: 5,
   },
-]; // [A CONFIRMER] — remplacer par de vrais avis clients
+]; // Traduits d'avis réels publiés sur TheFork (9,6/10, 38 avis / 30 jours). Remplacez par vos propres avis mis en avant.
 
 export const galleryPlaceholders = {
   plats: 6,

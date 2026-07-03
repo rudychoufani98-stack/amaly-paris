@@ -55,6 +55,27 @@
   overflow: hidden;
 }
 
+.theforkBox {
+  background: var(--cream-2);
+  border-left: 3px solid var(--gold);
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.theforkBox p {
+  font-size: 15px;
+  color: rgba(26, 21, 18, 0.8);
+}
+
+.formTitle {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
 .form {
   display: flex;
   flex-direction: column;

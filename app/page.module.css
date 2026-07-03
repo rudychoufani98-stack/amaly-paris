@@ -30,6 +30,14 @@
   margin: 20px auto 36px;
 }
 
+.heroRating {
+  color: #e0b877;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
+}
+
 .heroActions {
   display: flex;
   gap: 16px;
