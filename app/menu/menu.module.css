@@ -1,0 +1,73 @@
+.header {
+  padding: 90px 0 50px;
+  text-align: center;
+  background: var(--cream-2);
+}
+
+.sub {
+  color: rgba(26, 21, 18, 0.7);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.group {
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+
+.groupTitle {
+  font-size: 24px;
+  text-align: center;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 12px auto 32px;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.itemHead {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.itemName {
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(26, 21, 18, 0.3);
+  transform: translateY(-4px);
+}
+
+.itemPrice {
+  font-weight: 700;
+  color: var(--gold-dark);
+  white-space: nowrap;
+}
+
+.itemDesc {
+  margin-top: 4px;
+  font-size: 14px;
+  color: rgba(26, 21, 18, 0.65);
+}
+
+.note {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(26, 21, 18, 0.55);
+  max-width: 480px;
+  margin: 0 auto;
+}

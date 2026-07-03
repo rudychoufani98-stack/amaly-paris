@@ -1,0 +1,47 @@
+.header {
+  padding: 90px 0 50px;
+  text-align: center;
+  background: var(--cream-2);
+}
+
+.sub {
+  color: rgba(26, 21, 18, 0.7);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: var(--cream-2);
+  padding: 32px 28px;
+  border-left: 3px solid var(--gold);
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.card p {
+  font-style: italic;
+  color: rgba(26, 21, 18, 0.85);
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(26, 21, 18, 0.6);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
