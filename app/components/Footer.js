@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div>
-          <img src="/logo.svg" alt={restaurant.name} className={styles.logo} />
+          <img src="/logo.png" alt={restaurant.name} className={styles.logo} />
           <p className={styles.tagline}>{restaurant.tagline}</p>
         </div>
 

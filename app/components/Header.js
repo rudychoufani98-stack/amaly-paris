@@ -20,7 +20,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
-          <img src="/logo.svg" alt={`${restaurant.name} - restaurant libanais`} className={styles.logo} />
+          <img src="/logo.png" alt={`${restaurant.name} - restaurant libanais`} className={styles.logo} />
         </Link>
 
         <nav className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
