@@ -1,0 +1,64 @@
+backend:
+  name: github
+  repo: rudychoufani98-stack/amaly-paris
+  branch: main
+  # [A CONFIRMER] — remplacez par l'URL du Worker sveltia-cms-auth une fois déployé
+  # (ex: https://sveltia-cms-auth.rudychoufani98.workers.dev)
+  base_url: https://REMPLACER-PAR-URL-DU-WORKER-AUTH.workers.dev
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - file: "content/site.json"
+        label: "Amaly — Contenu"
+        name: "site"
+        fields:
+          - label: "Restaurant"
+            name: "restaurant"
+            widget: "object"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Slogan", name: "tagline", widget: "string" }
+              - { label: "Téléphone affiché", name: "phone", widget: "string" }
+              - { label: "Téléphone (format lien, ex. +33123456789)", name: "phoneHref", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Adresse", name: "address", widget: "string" }
+              - { label: "Lien Instagram", name: "instagram", widget: "string" }
+              - { label: "Lien TheFork", name: "thefork", widget: "string" }
+              - { label: "Note (ex: 9,6/10)", name: "rating", widget: "string" }
+              - { label: "ID Google Analytics", name: "gaId", widget: "string", required: false }
+              - label: "Horaires"
+                name: "hours"
+                widget: "list"
+                fields:
+                  - { label: "Jour(s)", name: "day", widget: "string" }
+                  - { label: "Horaire", name: "value", widget: "string" }
+          - label: "Points forts (page d'accueil)"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+          - label: "Carte (menu complet)"
+            name: "menu"
+            widget: "list"
+            fields:
+              - { label: "Nom de la catégorie", name: "category", widget: "string" }
+              - label: "Plats"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nom du plat", name: "name", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "string", required: false }
+                  - { label: "Prix (ex: 9,00 €)", name: "price", widget: "string" }
+          - label: "Avis clients mis en avant"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - { label: "Nom / source", name: "name", widget: "string" }
+              - { label: "Texte de l'avis", name: "text", widget: "text" }
+              - { label: "Note (1 à 5)", name: "rating", widget: "number", min: 1, max: 5 }
