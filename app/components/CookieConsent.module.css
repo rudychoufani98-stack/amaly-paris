@@ -28,28 +28,28 @@
   justify-content: flex-end;
 }
 
-.actions .btn {
+.actions :global(.btn) {
   padding: 10px 20px;
   font-size: 12px;
 }
 
-.actions .btn-ghost {
+.actions :global(.btn-ghost) {
   border-color: rgba(250, 246, 238, 0.4);
   color: var(--cream);
 }
 
-.actions .btn-ghost:hover {
+.actions :global(.btn-ghost):hover {
   background: rgba(250, 246, 238, 0.1);
   color: var(--cream);
 }
 
-.actions .btn-primary {
+.actions :global(.btn-primary) {
   background: var(--gold);
   border-color: var(--gold);
   color: var(--ink);
 }
 
-.actions .btn-primary:hover {
+.actions :global(.btn-primary):hover {
   background: var(--gold-dark);
   border-color: var(--gold-dark);
 }

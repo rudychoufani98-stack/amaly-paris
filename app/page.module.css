@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 
-.hero .eyebrow {
+.hero :global(.eyebrow) {
   color: #e0b877;
 }
 
@@ -45,24 +45,24 @@
   flex-wrap: wrap;
 }
 
-.hero .btn-primary {
+.hero :global(.btn-primary) {
   background: var(--gold);
   border-color: var(--gold);
   color: var(--ink);
 }
 
-.hero .btn-primary:hover {
+.hero :global(.btn-primary):hover {
   background: var(--gold-dark);
   border-color: var(--gold-dark);
   color: var(--cream);
 }
 
-.hero .btn-ghost {
+.hero :global(.btn-ghost) {
   border-color: rgba(250, 246, 238, 0.5);
   color: var(--cream);
 }
 
-.hero .btn-ghost:hover {
+.hero :global(.btn-ghost):hover {
   background: var(--cream);
   color: var(--ink);
 }
@@ -188,6 +188,28 @@
 .cta p {
   color: rgba(250, 246, 238, 0.7);
   margin-bottom: 28px;
+}
+
+.cta :global(.btn-primary) {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.cta :global(.btn-primary):hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+  color: var(--cream);
+}
+
+.cta :global(.btn-ghost) {
+  border-color: rgba(250, 246, 238, 0.5);
+  color: var(--cream);
+}
+
+.cta :global(.btn-ghost):hover {
+  background: var(--cream);
+  color: var(--ink);
 }
 
 @media (max-width: 860px) {
