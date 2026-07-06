@@ -11,7 +11,7 @@ export const restaurant = {
   phoneHref: "+33123456789", // [A CONFIRMER]
   email: "contact@amaly.paris", // [A CONFIRMER]
   address: "20 bis Rue Jean Giraudoux, 75116 Paris", // confirmé via TheFork
-  instagram: "https://www.instagram.com/amalyrestaurant/", // confirmé
+  instagram: "https://www.instagram.com/amalyparis/", // confirmé par le client
   thefork: "https://www.thefork.fr/restaurant/amaly-r863243", // confirmé
   rating: "9,6/10", // confirmé (TheFork, 38 avis sur 30 jours)
   gaId: "G-XXXXXXXXXX", // [A CONFIRMER] — remplacez par votre ID Google Analytics (Admin > Flux de données > ID de mesure)
